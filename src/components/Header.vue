@@ -26,7 +26,7 @@ watchEffect(() => { });
 <style scoped lang="less">
 .nav {
   height: 80px;
-  background-image: linear-gradient(to right, #183114, #446129);
+  background: linear-gradient(90deg, #183114 0.75%, #446129 100%);
   line-height: 80px;
 
   .nav__slogan {
@@ -39,6 +39,7 @@ watchEffect(() => { });
     font-size: 36px;
     text-align: center;
     color: #e9de4c;
+    text-shadow: 5px 5px 5px black;
   }
 
   .nav__menu {
@@ -51,13 +52,26 @@ watchEffect(() => { });
       float: left;
       width: 120px;
       height: 80px;
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
+      // font-family: 'Roboto';
+      // font-style: normal;
+      // font-weight: 400;
+      // font-size: 18px;
       line-height: 80px;
       text-align: center;
       color: #FFFFFF;
+    }
+
+    .menu__item a {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      transition: all .5s;
+    }
+
+    .menu__item a:hover {
+      color: #FCEE21;
+      font-size: 20px;
     }
 
     .menu__item--active {

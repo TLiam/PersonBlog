@@ -4,7 +4,7 @@ import { createWebHistory, createRouter } from "vue-router";
 // 2. 路由配置
 const routes = [
   {
-    path: '/home', component: () => import('../pages/Home.vue')
+    path: '/home', component: () => import('../pages/home/Home.vue')
   },
   {
     path: '/blogs', component: () => import('../pages/Blogs.vue')

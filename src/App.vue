@@ -8,7 +8,6 @@
 <script setup>
 // 引入 头部组件 "Header"
 import Header from "./components/Header.vue";
-
 </script>
 
 <style scoped>
